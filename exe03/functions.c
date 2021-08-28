@@ -1,7 +1,15 @@
 
 #include "functions.h"
 
-int somar(int n1, int n2){
+void  smaller_bigger ( int vector [], int n, int *s, int *l){
+  int i;
 
-    return n1+n2;
+  *s = vector[0];
+  *l = vector[1];
+  for(i=0; i<n;i++){
+    if(*s>vector[i])
+     *s = vector[i];
+    if(*l<vector[i])
+     *l = vector[i];
+  }
 }

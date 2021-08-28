@@ -1,18 +1,16 @@
+//==================BIBLIOTECAS=====================
 #include <stdio.h>
+#include <stdlib.h>
 #include "functions.h"
 
-int main() {
-
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
-
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+//=================INICIO CODIGO====================
+int main (){
+  int i, vector[1000], s, n;
+  scanf("%d", &n);
+    for(i=0; i<n; i++){
+      scanf("%d", &vector[i]);
+    }
+  s = smaller (vector, n);
+ printf("O menor numero eh: %d\n", s);
+  return 0;
 }

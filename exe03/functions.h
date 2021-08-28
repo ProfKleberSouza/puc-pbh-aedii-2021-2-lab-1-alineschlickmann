@@ -1,2 +1,1 @@
-
-int somar(int n1, int n2);
+void  smaller_bigger ( int vector [], int n, int *s, int *l);
